@@ -1,9 +1,12 @@
 const express = require("express");
 const { logger } = require("./config/logger-config");
+const swaggerDocs = require("./swagger");
 require("dotenv").config();
 const app = express();
 
 const PORT = process.env.PORT || 5000;
+
+swaggerDocs(app);
 app.listen(PORT, () => {
   console.log(`server is running on ${PORT}`);
   // logger.info(`server is running on Port${PORT}`, {});
