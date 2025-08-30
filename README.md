@@ -19,3 +19,6 @@ This is my backend advanced project.Here simply I do flight booking app
 -`utils` → here Helper methods contained!
 
 -`prisma`  → gernrator would be clinet and provider is MYSQL and i gave my localhost userwith port number and DB too..
+
+
+-`swagger` → here i have used SWAGGER fro API documentaion 

@@ -13,3 +13,11 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Airplane {
+  id           Int      @id @default(autoincrement())
+  model_number String
+  capacity     Int
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+}
